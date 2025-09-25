@@ -3,3 +3,59 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.contentor {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr;
+}
+
+.cabecalho {
+    border: 1px solid red;
+}
+
+.barra-lateral {
+    border: 1px solid blue;
+    grid-row: 1 / span 2 ;
+    display: grid;
+    grid-template-rows: repeat(13, minmax(10px, 30px));
+    font-weight: bold;
+    padding: 10px;
+    gap: 10px;
+    background-color: #a2d4f2;
+}
+
+#titulo-barra-lateral {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#icon-dashboard {
+    height: 2.5em;
+}
+
+#titulo-barra-lateral > span {
+    font-size: 1.2em;
+}
+
+.icon-item {
+    height: 20px;
+}
+
+.item-barra-lateral {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.conteudo {
+    border: 1px solid green;
+}
+
