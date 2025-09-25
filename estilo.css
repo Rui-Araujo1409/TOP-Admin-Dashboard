@@ -154,7 +154,11 @@ body {
 
 .conteudo-principal {
     grid-column: 1;
-    border: 1px solid red;;
+}
+
+.titulo-conteúdo {
+    font-weight: bold;
+    padding: 10px 0 0 10px;
 }
 
 .cartoes {
@@ -180,20 +184,60 @@ body {
 .texto-cartao {
     font-size: 0.7em;
     color: #6E6E6E;
+    margin-bottom: 10px;
+}
+
+.icon-cartao {
+    text-align: right;
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+}
+
+.icon-cartao>img {
+        height: 15px;
 }
 
 .bloco-direito {
-    border: 1px solid blue;
     grid-column: 2 / 3;
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    padding: 0 10px;
+    gap: 20px;
 }
 
 .anuncios {
-    border: 1px solid yellow;
+   background-color: white;
+   display: grid;
+   margin-top: 10px;
+   border-radius: 5px;
+   padding: 3px;
+   gap: 10px;
 }
 
-.tendencias {
-    border: 1px solid orange;
+.anuncio {
+    background-color: white;
+    padding: 15px;
+}
+
+.titulo-anuncio {
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.texto-anuncio {
+    color: #6E6E6E;
+    font-size: 0.5em;
+    margin-bottom: 10px;
+}
+
+#titulo-tendencias {
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+}
+
+.users {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
 }
